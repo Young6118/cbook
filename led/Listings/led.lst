@@ -1,0 +1,80 @@
+C51 COMPILER V9.54   LED                                                                   03/05/2016 15:57:41 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE LED
+OBJECT MODULE PLACED IN .\Objects\led.obj
+COMPILER INVOKED BY: D:\Program Files (x86)\C51\BIN\C51.EXE led.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Li
+                    -stings\led.lst) TABS(2) OBJECT(.\Objects\led.obj)
+
+line level    source
+
+   1          //点亮所有灯
+   2          //p00~p07  l1~l8     低电平点亮
+   3          //le     y4c    高电平   数据通    低电平  锁存
+   4          // y4   y4c   
+   5          // 1     0
+   6          // 0      1
+   7          // a=p25    b=p26   c=p27     y4
+   8          //0           0       1       0
+   9          //0           0       0       1
+  10          #include "led.h"
+*** WARNING C318 IN LINE 4 OF led.h: can't open file 'common.h'
+*** ERROR C141 IN LINE 8 OF led.h: syntax error near 'n', expected ')'
+*** ERROR C141 IN LINE 9 OF led.h: syntax error near 'n', expected ')'
+  11          void  led()
+  12          {
+  13   1        unsigned char a;
+  14   1        int i;
+  15   1          a = 0x00; //1111 1111 ->
+  16   1          A138 = 0;
+*** ERROR C202 IN LINE 16 OF led.c: 'A138': undefined identifier
+  17   1          B138 = 0; 
+*** ERROR C202 IN LINE 17 OF led.c: 'B138': undefined identifier
+  18   1          C138 = 1;
+*** ERROR C202 IN LINE 18 OF led.c: 'C138': undefined identifier
+  19   1          for (i = 0; i < 256; i++)
+  20   1          {
+  21   2              P0 = ~a;          
+  22   2              delay(1000);
+  23   2              a ++;
+  24   2          }
+  25   1          
+  26   1          A138 = 0;
+  27   1          B138 = 0;
+  28   1          C138 = 0; 
+  29   1      }
+  30          
+  31          void led_n(uchar n)
+  32          {
+  33   1          A138 = 0;
+  34   1          B138 = 0; 
+  35   1          C138 = 1;  //1000 0000 ->0111 1111
+  36   1          if ( n == 0 )
+  37   1          {
+  38   2            P0 = 0xff;
+  39   2          }
+  40   1          else
+  41   1          {
+  42   2            P0 = ~(0x80 >> (n-1));
+  43   2          }
+  44   1      
+  45   1          C138 = 0;     
+  46   1      }
+  47          
+  48          void N_buzz(uchar n)
+C51 COMPILER V9.54   LED                                                                   03/05/2016 15:57:41 PAGE 2   
+
+  49          {
+  50   1          A138 = 1;
+  51   1          B138 = 0; 
+  52   1          C138 = 1; 
+  53   1        
+  54   1          buzz = n;
+  55   1        
+  56   1          A138 = 0;
+  57   1          B138 = 0;
+  58   1          C138 = 0; 
+  59   1          
+  60   1      }
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  5 ERROR(S)

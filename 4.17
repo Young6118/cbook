@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+	float a,b,c,disc,x1,x2,realpart,imgpart;
+	printf ("\n请输入方程的三个系数：（a=,b=,c=）\n");
+	scanf ("a=%f,b=%f,c=%f",&a,&b,&c);
+	if(fabs(a)<=1e-6)
+	{
+		printf ("该方程不是二次方程：\n");
+		exit(1);
+	}
+	else disc=b*b-4*a*c;
+	if (fabs(disc)<=1e-6)
+
+}

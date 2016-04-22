@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 新建文本文档 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1.USE\AppData\Local\Temp\RSP1D3.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/新建文本文档.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\练习\新建文本文档.c"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1.USE\AppData\Local\Temp\RSP1D3.tmp" 
+<h3>Output Window</h3>
+Compiling...
+新建文本文档.c
+e:\岱锇\疴建钿本钿档.c(0) : fatal error C1033: cannot open program database 'e:\岱锇\debug\vc60.pdb'
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+新建文本文档.obj - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

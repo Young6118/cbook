@@ -1,0 +1,24 @@
+C51 COMPILER V9.54   ______                                                                03/05/2016 15:57:42 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE ______
+OBJECT MODULE PLACED IN .\Objects\·äÃùÆ÷.obj
+COMPILER INVOKED BY: D:\Program Files (x86)\C51\BIN\C51.EXE ..\..\led\·äÃùÆ÷.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTE
+                    -ND PRINT(.\Listings\·äÃùÆ÷.lst) TABS(2) OBJECT(.\Objects\·äÃùÆ÷.obj)
+
+line level    source
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   ----    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
