@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: prime¡·c - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1.USE\AppData\Local\Temp\RSP1046.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/prime¡·c.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Á·Ï°\1\c\prime.c"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1.USE\AppData\Local\Temp\RSP1046.tmp" 
+Creating temporary file "C:\Users\ADMINI~1.USE\AppData\Local\Temp\RSP1047.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/prime¡·c.pdb" /debug /machine:I386 /out:"Debug/prime¡·c.exe" /pdbtype:sept 
+".\Debug\prime¡·c.obj"
+".\Debug\prime.obj"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1.USE\AppData\Local\Temp\RSP1047.tmp"
+<h3>Output Window</h3>
+Compiling...
+prime.c
+E:\Á·Ï°\1\c\prime.c(3) : error C2061: syntax error : identifier 'IsPrime'
+E:\Á·Ï°\1\c\prime.c(3) : error C2059: syntax error : ';'
+E:\Á·Ï°\1\c\prime.c(3) : error C2059: syntax error : 'type'
+E:\Á·Ï°\1\c\prime.c(27) : warning C4013: 'IsPrime' undefined; assuming extern returning int
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+prime¡·c.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
